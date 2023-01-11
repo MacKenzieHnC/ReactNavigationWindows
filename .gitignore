@@ -34,7 +34,10 @@ local.properties
 
 # node.js
 #
-node_modules/
+node_modules/**
+!node_modules/**/
+node_modules/react-native
+!node_modules/react-native-gesture-handler/src/RNGestureHandlerModule.windows.ts
 npm-debug.log
 yarn-error.log
 
