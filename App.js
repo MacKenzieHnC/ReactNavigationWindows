@@ -6,16 +6,19 @@
  * @flow strict-local
  */
 
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {SafeAreaView, ScrollView, View} from 'react-native';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View />
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView>
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
+          <View />
+        </ScrollView>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
